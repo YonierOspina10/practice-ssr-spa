@@ -62,6 +62,7 @@ export default defineNuxtConfig({
 
   // Configuración de Nitro para mejor performance
   nitro: {
+    preset: 'vercel',
     compressPublicAssets: true,
     prerender: {
       crawlLinks: true,
