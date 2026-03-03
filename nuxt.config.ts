@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   // Configuración de renderizado por ruta
   routeRules: {
     // Landing con SSR para mejor LCP y SEO
-    '/': { ssr: true, prerender: true },
+    '/': { ssr: true },
     // Páginas del casino con SPA para mejor interactividad
     '/slots/**': { ssr: false },
     '/roulette': { ssr: false },
@@ -64,10 +64,6 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel',
     compressPublicAssets: true,
-    prerender: {
-      crawlLinks: false,
-      routes: ['/'],
-    },
   },
 
   // Optimización de imágenes y assets
