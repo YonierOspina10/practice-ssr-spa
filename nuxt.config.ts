@@ -65,7 +65,7 @@ export default defineNuxtConfig({
     preset: 'vercel',
     compressPublicAssets: true,
     prerender: {
-      crawlLinks: true,
+      crawlLinks: false,
       routes: ['/'],
     },
   },
